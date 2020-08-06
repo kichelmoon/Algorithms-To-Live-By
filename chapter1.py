@@ -1,8 +1,14 @@
 import random
 
+print("The Secretary Problem")
+
 secretaries = []
+number_of_applicants = random.randint(10, 100)
+
+print ("There are " + str(number_of_applicants) + " applicants.")
+
 skill_range = random.randint(1, 100)
-for i in range(skill_range):
+for i in range(number_of_applicants):
     secretaries.append(random.randrange(skill_range))
 
 applicant_hired = False
